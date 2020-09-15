@@ -1,0 +1,27 @@
+.cart {
+  &__table {
+    width: 100%;
+    margin: 80px 0 0 0;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  &__box-button {
+    text-align: center;
+  }
+}
+
+  .table {
+    &__td {
+      padding: 15px 0;
+      border-bottom: 1px solid black;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+  }
+
+  .title__cart {
+    padding: 60px 0 0 0;
+  }

@@ -1,0 +1,58 @@
+@import "../abstracts/variables";
+@import '../abstracts/mixins';
+
+.header {
+  @include text-styles($md-font-size, $white);
+  position: sticky;
+  top: 0;
+  text-transform: uppercase;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 0 0 0 30px;
+  }
+
+  &__menu {
+    color: $white;
+    text-decoration: none;
+
+    &--hovered:hover {
+      cursor: pointer;
+      color: $yellow;
+    }
+  }
+}
+
+.assortments {
+  &__header {
+    background-color: $dark-beige;
+  }
+
+  &__menu {
+    color: $dark-brown;
+  }
+
+  &__menu--hovered:hover {
+    cursor: pointer;
+    color: $light-brown;
+  }
+}

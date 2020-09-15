@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.quotes {
+  text-align: center;
+  padding: 100px;
+  background-color: $beige;
+  @include breakpoint(750) {
+    padding: 0;
+  }
+
+  &--uppercase {
+    color: $dark-brown;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import 'common/normalize';
+@import './common/base';
+
+@import 'layout/header';
+@import "layout/top-section";
+@import "layout/products-categories";
+@import "layout/product";
+@import "layout/quotes";
+@import "layout/follow";
+@import "layout/natural-ingredients";
+@import "layout/our-kitchen";
+@import "layout/comments";
+@import 'layout/cart';
+@import 'layout/footer';

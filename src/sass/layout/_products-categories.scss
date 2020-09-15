@@ -1,0 +1,44 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.product-categories {
+  padding: 30px;
+  text-align: center;
+
+  &__sub-title {
+    color: $light-brown;
+  }
+}
+
+.categories {
+  @include breakpoint(800) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include breakpoint(450) {
+    grid-template-columns: 1fr;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+
+  &--hovered:hover{
+    cursor: pointer;
+    color: $yellow;
+  }
+  &__block {
+    display: grid;
+  }
+
+  &__button {
+    padding: 15px 30px;
+    background-color: $beige;
+    color: $dark-brown;
+    margin: 50px;
+
+    &--hovered:hover {
+      background-color: $yellow;
+      cursor: pointer;
+    }
+  }
+}
+

@@ -1,0 +1,58 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.comments {
+  &__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  &__form {
+    @include breakpoint(850){
+      width: 100%;
+    }
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__block {
+    width: 70%;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid $dark-beige;
+  }
+
+  &__name-date {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    padding: 10px 30px;
+    margin: 20px 0;
+
+    &--hovered:hover {
+      cursor: pointer;
+      background-color: $yellow;
+    }
+  }
+}
+
+.textarea {
+  resize: vertical;
+  width: 100%;
+  border: 1px solid $light-brown;
+}
+
+.input {
+  width: 98%;
+  padding: 10px 5px;
+  border: 1px solid $light-brown;
+}
+
+.comments-page__follow{
+  padding: 0;
+}

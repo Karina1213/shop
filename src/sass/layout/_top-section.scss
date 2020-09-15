@@ -1,0 +1,42 @@
+@import "../abstracts/variables";
+
+.top-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-image: url(http://chocorocco.ancorathemes.com/wp-content/uploads/2017/09/slide1.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+
+  &__home{
+    text-align: center;
+  }
+
+  &__title {
+    padding: 150px 0 20px;
+    color: $white;
+  }
+  &__sub-title{
+    color: $white;
+  }
+
+  &__button {
+    padding: 25px 85px;
+    margin: 45px 0 190px;
+    @include text-styles($md-font-size, $dark-brown);
+    background-color: $yellow;
+    &--hovered:hover{
+      cursor: pointer;
+      background-color: $light-brown;
+      color: $white;
+    }
+  }
+}
+
+

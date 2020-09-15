@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+
+.our-kitchen {
+  background: url('http://chocorocco.ancorathemes.com/wp-content/uploads/2017/05/bg2.jpg?id=314') no-repeat center;
+  background-size: cover;
+  text-align: center;
+
+  &__title {
+    color: $white;
+    padding: 120px 0 40px;
+  }
+
+  &__sub-title {
+    color: $white;
+  }
+}

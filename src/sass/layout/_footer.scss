@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.footer {
+  color: $white;
+  display: flex;
+  background-color: $dark-brown;
+
+  &__contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__bottom {
+    @include breakpoint(780){
+     flex-direction: column;
+    }
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}

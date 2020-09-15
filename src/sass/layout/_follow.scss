@@ -1,0 +1,56 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.follow {
+  padding: 20px 0 90px;
+  text-align: center;
+  background: url('http://chocorocco.ancorathemes.com/wp-content/themes/chocorocco/images/quote.jpg');
+
+  &__title {
+    padding: 50px 0 0px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+
+    @include breakpoint(750){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    @include breakpoint(450) {
+      padding: 10px 0;
+      max-width: 200px;
+      height: auto;
+    }
+    list-style-type: none;
+    padding: 5px;
+  }
+
+  &__anchor {
+    text-decoration: none;
+  }
+
+  &__img--hovered:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  }
+
+  &__button {
+    color: $dark-brown;
+    margin: 20px 0 40px;
+    border: 1px solid $dark-brown;
+    padding: 15px 60px;
+    background-color: transparent;
+
+    &--hovered:hover {
+      cursor: pointer;
+      border: 1px solid transparent;
+      background-color: $yellow;
+    }
+  }
+}
+
