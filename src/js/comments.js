@@ -1,10 +1,10 @@
-import {LocalStorage} from "./localStorage.js";
+import {LocalStorage} from "./LocalStorage.js";
 
 class FotmatDate {
     static getDate(date) {
         this.hours = `0 ${date.getHours()}`;
         this.minutes = `0 ${date.getMinutes()}`;
-        return `${this.hours.slice(-2)}:${this.minutes.slice(-2)}`;
+        return `${this.hours.slice(-2)}:${this.minutes.slice(-3)}`;
     };
 }
 

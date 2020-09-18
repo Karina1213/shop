@@ -11,10 +11,10 @@
 }
 
 .categories {
-  @include breakpoint(800) {
+  @include breakpoint(1050) {
     grid-template-columns: 1fr 1fr;
   }
-  @include breakpoint(450) {
+  @include breakpoint(555) {
     grid-template-columns: 1fr;
   }
   display: grid;

@@ -1,16 +1,21 @@
 # 👋 Sweet Shop 'Choco Rocco'  :chocolate_bar: :lollipop:
 
+### Log In:
+- email: admin@gmail.com
+- password: admin
 
-- **Used:** JavaScript ES6, CSS(SASS), HTML
-- **Time:** About 2 Weeks
+**Used:** JavaScript ES6, CSS(SASS), HTML
+**Time:** About 2 Weeks
 
-### :large_orange_diamond: Responsive design optimized for 5 breakpoints:
+### :large_orange_diamond: The application contains blocks:
 
-- mobile: < 640px,
-- sm: >640px,
-- md: >768px,
-- lg: >1024px,
-- xl: >1280px
+1. Authorization
+2. Main page with product categories
+3. List of goods with description, price and add to cart button
+4. Modal window with additional information that pops up when you click on the product description.
+5. Cart of goods - the user can add items to the cart only after login (data is saved in localStorage).
+6. Page with comments, the user can leave a comment and it will be immediately displayed on the page.
+7. Responsive design on screens > 600px
 
 ### :clipboard: ‍‍:small_red_triangle_down: How to use:
 - Use `npm run dev` Builds the project in development mode 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <script type="module" src="../js/Login.js"></script>
+    <script type="module" src="../js/Logout.js" defer></script>
+    <script type="module" src="../js/Header.js" defer></script>
+    <script type="module" src="../js/Footer.js" defer></script>
+    <title>Login</title>
+</head>
+<body class="body">
+
+<header class="header assortments__header" id="header"></header>
+
+<section class="login">
+    <div class="login__container">
+        <h4 class="title--uppercase">Log in</h4>
+        <form name='form'>
+            <input name="email" placeholder="Email" type="email" class="input input__email" id="input-email" required/>
+            <input name="password" placeholder="Password" type="password" class="input input__password"
+                   id="input-password"/>
+            <button type="submit" class="button categories__button--hovered form__button" id="loginEnter" disabled>
+                Log In
+            </button>
+        </form>
+        <div class="login__message sub-title"></div>
+    </div>
+</section>
+
+<footer class="footer" id="footer"></footer>
+
+</body>
+</html>

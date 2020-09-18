@@ -2,7 +2,6 @@
 @import '../abstracts/mixins';
 
 .header {
-  @include text-styles($md-font-size, $white);
   position: sticky;
   top: 0;
   text-transform: uppercase;
@@ -19,15 +18,23 @@
   &__logo {
     max-width: 80px;
     max-height: 80px;
+    @include breakpoint(750) {
+      display:none;
+    }
   }
 
   &__list {
+    @include breakpoint(500) {
+      display: block;
+    }
+    font-size: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
   }
 
   &__item {
+    font-size: $md-font-size;
     padding: 0 0 0 30px;
   }
 
