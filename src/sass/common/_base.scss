@@ -1,11 +1,17 @@
 @import "../abstracts/variables";
 @import '../abstracts/mixins';
 
+html {
+  height: 100%;
+}
+
 .body {
+  height: 100%;
   font-family: $font-family-fjalla;
   @include text-styles($md-font-size, $dark-brown);
   line-height: 25px;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -38,7 +44,7 @@ img {
   line-height: 1.0;
 
   &--uppercase {
-    @include text-styles(  1.667rem, $light-brown);
+    @include text-styles(1.667rem, $light-brown);
     font-family: $font-family-fjalla;
     text-transform: uppercase;
     line-height: 1.32;
