@@ -1,11 +1,12 @@
 # 👋 Sweet Shop 'Choco Rocco'  :chocolate_bar: :lollipop:
 
+###Deploy on Netlify: https://gifted-shockley-841923.netlify.app
+
 ### Log In:
 - email: admin@gmail.com
 - password: admin
 
 **Used:** JavaScript ES6, CSS(SASS), HTML
-**Time:** About 2 Weeks
 
 ### :large_orange_diamond: The application contains blocks:
 
